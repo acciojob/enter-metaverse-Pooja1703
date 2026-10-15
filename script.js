@@ -1,3 +1,7 @@
 document.getElementById("enterBtn").addEventListener("click", function() {
-    document.getElementById("status").innerHTML = "<h1>Entered Metaverse</h1>";
+    let h1 = document.createElement("h1");
+    h1.innerText = "Entered Metaverse";
+
+    document.getElementById("status").innerHTML = "";
+    document.getElementById("status").appendChild(h1);
 });
